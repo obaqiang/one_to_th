@@ -1,0 +1,57 @@
+.paid_left_img{
+	width: 0.32rem;
+	margin-top: 0.22rem;
+	margin-left: 0.1rem ;
+}
+.paid_line{
+	border-bottom: 1px solid #cacaca;
+}
+.paid_line_e0{
+	border-bottom:1px solid #e0e0e0;
+}
+.paid_right{
+	padding-top: 0.16rem;
+}
+.paid_status{
+	font-size: 0.16rem;
+	color: #313131;
+	line-height: 0.3rem;
+}
+.paid_tic{
+	font-size: 0.11rem;
+	color: #908e8f;
+	line-height: 0.3rem;
+}
+.paid_del{
+	color: #818181;
+	font-size: 0.14rem;
+	line-height: 0.35rem;
+}
+.paid_a{
+	color: #444444;
+	font-size: 0.13rem;
+	line-height: 0.5rem;
+	font-weight: bold;
+}
+.paid_b{
+	color: #444444;
+	font-size: 0.13rem;
+	line-height: 0.5rem;
+	padding-left: 0.3rem;
+}
+.paid_c{
+	color: #444444;
+	font-size: 0.13rem;
+	line-height: 0.5rem;
+	font-weight: bold;
+	padding-left: 0.3rem;
+}
+.paid_time{
+	margin-top: 0.25rem;
+}
+.body_num_num{
+	text-align: right;
+	color: #666666;
+	font-size: 0.12rem;
+	line-height: 0.3rem;
+}

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="format-detection" content="telephone=no" />
+		<title>向商户付款</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/index.css" rel="stylesheet">
+		<link href="css/paid.css" rel="stylesheet">
+		<link href="css/paid_app.css" rel="stylesheet">
+		<script src="js/html5shiv.min.js"></script>
+	</head>
+	<style>
+		html,
+		body {
+			background: #f2f2f2;
+		}
+	</style>
+
+	<body>
+
+		<div class="container">
+			<div class="row no_wb paid_line bg_ff">
+				<div class="col-xs-2 paid_left">
+					<img class="paid_left_img" src="img/64px_64px_icon2.png" alt="" />
+				</div>
+				<div class="col-xs-10 paid_right">
+					<div class="paid_status">
+						会员帐号 15131****151
+					</div>
+					<div class="paid_tic">
+						余额 906.30元
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-12 paid_del">
+					订单详情
+				</div>
+			</div>
+
+			<div class="row bg_ff paid_line_e0">
+				<div class="col-xs-7 paid_a">
+					美味家园
+				</div>
+				<div class="col-xs-2 no_wb paid_b">
+					原价
+				</div>
+				<div class="col-xs-3 no_wb paid_c">
+					￥141.00
+				</div>
+			</div>
+			<div class="row bg_ff">
+				<div class="col-xs-12 body_app no_wb paid_line_e0">
+					<div class="body_app_a">
+						红包<span>（满100可用）</span>
+					</div>
+					<div class="body_b">
+						<span class="body_b_bo">10.00</span>
+						<span>积分可抵￥1000.00</span>
+					</div>
+
+				</div>
+			</div>
+			<div class="row bg_ff">
+				<div class="col-xs-12 body_app no_wb paid_line_e0" data-toggle="modal" data-target="#myModal_1">
+					<div class="body_app_a">
+						优惠券
+					</div>
+					<div class="body_b">
+						满100.00减10.00
+						<img style="width: 0.07rem;" src="img/14px_26px_V.png" alt="" />
+					</div>
+
+				</div>
+			</div>
+			<div class="row bg_ff">
+				<div class="col-xs-12 body_app no_wb paid_line_e0">
+					<div class="body_app_a">
+						可用<span style="color: #cb2920;">90</span>积分<span>(10积分=1元)</span>
+					</div>
+					<div class="body_b">
+						<span class="body_b_bo">10.00</span>
+						<span>积分可抵￥1000.00</span>
+					</div>
+
+				</div>
+			</div>
+			<div class="row bg_ff">
+				<div class="col-xs-12 body_app no_wb paid_line_e0" data-toggle="modal" data-target="#myModal_2">
+					<div class="body_app_a">
+						套餐
+					</div>
+					<div class="body_b">
+						豪华套餐
+						<img style="width: 0.07rem;" src="img/14px_26px_V.png" alt="" />
+					</div>
+
+				</div>
+			</div>
+
+			<div class="row bg_ff paid_time">
+				<div class="col-xs-7 body_name">
+					所选套餐
+				</div>
+				<div class="col-xs-5 body_num_num">
+					豪华套餐
+				</div>
+			</div>
+			<div class="row bg_ff ">
+				<div class="col-xs-7 body_name">
+					积分抵用（还剩0积分）
+				</div>
+				<div class="col-xs-5 body_num_num">
+					￥9.00元
+				</div>
+			</div>
+			<div class="row bg_ff ">
+				<div class="col-xs-7 body_name">
+					红包抵用（还剩0积分）
+				</div>
+				<div class="col-xs-5 body_num_num">
+					￥9.00元
+				</div>
+			</div>
+			<div class="row bg_ff paid_line">
+				<div class="col-xs-7 body_name">
+					优惠券（还剩3张）
+				</div>
+				<div class="col-xs-5 body_num_num">
+					满50.00元减10.00元
+				</div>
+			</div>
+
+			<div class="row bg_ff ">
+				<div class="col-xs-7 body_name">
+					订单时间
+				</div>
+				<div class="col-xs-3 body_num">
+					2016-06-11
+				</div>
+				<div class="col-xs-2 body_price">
+					10:40
+				</div>
+			</div>
+			<div class="row bg_ff paid_num">
+				<div class="col-xs-7 body_name">
+					订单时间
+				</div>
+				<div class="col-xs-5 body_num_num">
+					2123154651246
+				</div>
+			</div>
+
+			<div class="row nav_bot">
+				<div class="col-xs-12 no_wb nav_al">
+					<img class="al_img" src="img/28px_28px_icon.png" alt="" /> 支付时请确保服务员在您身边，方便确认您成功买单
+				</div>
+				<div class="col-xs-12 nav_btn bg_cb ">
+					￥141.00支付宝买单
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- 模态框（Modal） -->
+		<div class="modal fade" id="myModal_1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title" id="myModalLabel">
+							选择消费套餐
+						</h4>
+					</div>
+					<div class="modal-body">
+						<div class="ch_pac paid_line_e0">
+							豪华套餐
+							<img style="width: 0.19rem;float: right;margin-right: 0.05rem;margin-top: 0.1rem;" src="img/38px_38px_icon2.png" alt="" />
+						</div>
+					</div>
+					<div class="modal-body">
+						<div class="ch_pac paid_line_e0">
+							超值套餐
+							<img style="width: 0.19rem;float: right;margin-right: 0.05rem;margin-top: 0.1rem;" src="img/38px_38px_icon2.png" alt="" />
+						</div>
+					</div>
+					<div class="btn_area">
+						<div class="btn_cancel" data-dismiss="modal">取消</div>
+						<div class="btn_confirm">确认</div>
+					</div>
+
+					<!--<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">关闭
+						</button>
+						<button type="button" class="btn btn-primary">
+							提交更改
+						</button>
+					</div>-->
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal -->
+		</div>
+
+		<!-- 模态框（Modal） -->
+		<div class="modal fade" id="myModal_2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-body">
+						<div class="text_area paid_line">
+							满100.00元减10.00元
+						</div>
+						<div class="text_area paid_line">
+							满100.00元减10.00元
+						</div>
+						<div class="text_area paid_line">
+							满100.00元减10.00元
+						</div>
+						<div class="text_area ">
+							不实用优惠券
+						</div>
+						
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal -->
+		</div>
+
+		<script src="js/jquery-1.11.3.min.js "></script>
+		<script src="js/bootstrap.js "></script>
+		<script>
+			function Alert(alert_text) {
+				$('.alert_bl').remove();
+				var alert_div = '<div class="alert_bl" style="display:none;"><span>' + alert_text + '</span></div>';
+				$('body').append(alert_div);
+				$('.alert_bl').fadeIn();
+				setTimeout("$('.alert_bl').fadeOut()", 1500);
+			}
+			
+			$('.nav_btn').click(function(){
+				Alert('这是Alert弹框样式');
+			})
+			
+		</script>
+		<script>
+			//各个屏幕大小适配
+			(function(doc, win) {
+				var docEl = doc.documentElement,
+					resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+					recalc = function() {
+						var clientWidth = docEl.clientWidth;
+						if(!clientWidth) return;
+						docEl.style.fontSize = 100 * (clientWidth / 375) + 'px';
+					};
+
+				if(!doc.addEventListener) return;
+				win.addEventListener(resizeEvt, recalc, false);
+				doc.addEventListener('DOMContentLoaded', recalc, false);
+			})(document, window);
+		</script>
+
+	</body>
+
+</html>

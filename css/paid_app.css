@@ -1,0 +1,92 @@
+.body_app {
+	width: 94%;
+	margin-left: 3%;
+	margin-right: 3%;
+}
+
+.body_app_a {
+	width: 45%;
+	display: inline-block;
+	float: left;
+	line-height: 0.5rem;
+}
+
+.body_b {
+	display: inline-block;
+	width: 55%;
+	float: left;
+	line-height: 0.5rem;
+	text-align: right;
+	font-size: 0.13rem;
+}
+
+.body_b_bo {
+	border: 1px solid #d0d0d0;
+	display: inline-block;
+	line-height: 0.3rem;
+	padding: 0 0.1rem;
+}
+#myModal_1 .modal-dialog{
+	margin: 0;
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+}
+#myModal_1 .modal-content{
+	border-radius: 0;
+}
+#myModal_1 .modal-header{
+	text-align: center;
+	border-bottom: none;
+}
+#myModal_1 .modal-body{
+	padding-top: 0;
+}
+.ch_pac{
+	line-height: 0.4rem;
+	color: #1c1c1c;
+	padding-left: 0.05rem;
+}
+.btn_area{
+	text-align: center;
+	line-height: 0.5rem;
+}
+.btn_cancel{
+	line-height: 0.4rem;
+	width: 30%;
+	font-size: 0.19rem;
+	color: #fff;
+	border-radius: 0.05rem;
+	display: inline-block;
+	background: #999;
+}
+.btn_confirm{
+	line-height: 0.4rem;
+	width: 30%;
+	font-size: 0.19rem;
+	color: #fff;
+	border-radius: 0.05rem;
+	display: inline-block;
+	background: #cb2920;
+	margin-left: 0.6rem;
+	
+}
+#myModal_2 .modal-dialog{
+	position: fixed;
+	bottom: 0.2rem;
+	width: 90%;
+	left: 2%;
+}
+.text_area{
+	text-align: center;
+	font-size: 0.19rem;
+	line-height: 0.507rem;
+	color: #007AFF;
+}
+.text_area_btn{
+	margin-top: 0.1rem;
+	text-align: center;
+	color: #007AFF;
+	font-size: 0.19rem;
+	line-height: 0.507rem;
+}

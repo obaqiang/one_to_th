@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="format-detection" content="telephone=no" />
+		<title>向商户付款</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/index.css" rel="stylesheet">
+		<script src="js/html5shiv.min.js"></script>
+	</head>
+	<style>
+		html,
+		body {
+			background: #f2f2f2;
+		}
+	</style>
+
+	<body>
+
+		<div class="container">
+			<div class="row no_wb">
+				<div class="col-xs-12 one_header">
+					<div class="header_title">
+						美味家园（城北路店）
+					</div>
+					<div class="header_table">
+						C06桌
+					</div>
+					<div class="header_price">
+						￥141.00
+					</div>
+				</div>
+			</div>
+			
+			<div class="row bg_ff">
+				<div class="col-xs-12 one_body">
+					共3份，合计：￥141.00
+				</div>
+			</div>
+			<div class="row bg_ff">
+				<div class="col-xs-8 body_name">
+					招牌饭
+				</div>
+				<div class="col-xs-2 body_num">
+					x1
+				</div>
+				<div class="col-xs-2 body_price">
+					￥44
+				</div>
+			</div>
+			<div class="row bg_ff">
+				<div class="col-xs-8 body_name">
+					麻辣牛腩饭
+				</div>
+				<div class="col-xs-2 body_num">
+					x12
+				</div>
+				<div class="col-xs-2 body_price">
+					￥443
+				</div>
+			</div>
+			<div class="row bg_ff">
+				<div class="col-xs-8 body_name">
+					麻辣牛腩饭
+				</div>
+				<div class="col-xs-2 body_num">
+					x12
+				</div>
+				<div class="col-xs-2 body_price">
+					￥443
+				</div>
+			</div>
+			<div class="row bg_ff">
+				<div class="col-xs-8 body_name">
+					麻辣牛腩饭
+				</div>
+				<div class="col-xs-2 body_num">
+					x12
+				</div>
+				<div class="col-xs-2 body_price">
+					￥443
+				</div>
+			</div>
+			
+			<div class="row nav_bot">
+				<div class="col-xs-12 no_wb nav_al">
+					<img class="al_img" src="img/28px_28px_icon.png" alt="" />
+					支付时请确保服务员在您身边，方便确认您成功买单
+				</div>
+				<div class="col-xs-12 nav_btn bg_24">
+					￥141.00支付宝买单
+				</div>
+				
+			</div>
+			
+			
+			
+		</div>	
+
+		<script src="js/jquery-1.11.3.min.js "></script>
+		<script src="js/bootstrap.js "></script>
+		<script>
+			function Alert(alert_text) {
+				$('.alert_bl').remove();
+				var alert_div = '<div class="alert_bl" style="display:none;"><span>' + alert_text + '</span></div>';
+				$('body').append(alert_div);
+				$('.alert_bl').fadeIn();
+				setTimeout("$('.alert_bl').fadeOut()", 1500);
+			}
+			
+			$('.nav_btn').click(function(){
+				Alert('这是Alert弹框样式');
+			})
+			
+		</script>
+		<script>
+			//各个屏幕大小适配
+			(function(doc, win) {
+				var docEl = doc.documentElement,
+					resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+					recalc = function() {
+						var clientWidth = docEl.clientWidth;
+						if(!clientWidth) return;
+						docEl.style.fontSize = 100 * (clientWidth / 375) + 'px';
+					};
+
+				if(!doc.addEventListener) return;
+				win.addEventListener(resizeEvt, recalc, false);
+				doc.addEventListener('DOMContentLoaded', recalc, false);
+			})(document, window);
+		</script>
+
+	</body>
+
+</html>
